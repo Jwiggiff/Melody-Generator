@@ -1,0 +1,50 @@
+.chords {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.chordPicker,
+#addChord {
+  padding: 2rem 3rem;
+  background-color: #333;
+  border-radius: 8px;
+  line-height: 0;
+}
+
+#addChord {
+  font-size: 4em;
+  color: #222;
+}
+
+.chordPicker {
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+  width: min-content;
+
+  input {
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #222;
+    padding: 0.5rem;
+    transition: border-bottom 0.2s ease;
+
+    &::placeholder {
+      color: #222;
+    }
+
+    &:focus-within {
+      border-bottom: 1px solid #666;
+    }
+  }
+}
+
+#goBtn {
+  padding: 1rem;
+  font-size: 2em;
+  background-color: #333;
+  border-radius: 8px;
+  margin-top: 2rem;
+  width: 100%;
+}
